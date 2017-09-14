@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aakash.restura_de_ordera.ItemsListActivity">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back"
+            android:alpha="0.7" />
+
+        <ImageView
+            android:id="@+id/momos"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/momos"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="192dp" />
+
+        <ImageView
+            android:id="@+id/rolls"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/springrolls"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFDE7"
+        android:fontFamily="cursive"
+        android:text="Item list"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/rasgulla"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/rolls"
+            app:srcCompat="@drawable/rasgulla"
+            app:layout_constraintLeft_toLeftOf="@+id/rolls"
+            app:layout_constraintRight_toRightOf="@+id/rolls" />
+
+        <ImageView
+            android:id="@+id/coffee"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/momos"
+            app:srcCompat="@drawable/coffee"
+            app:layout_constraintRight_toRightOf="@+id/momos"
+            app:layout_constraintLeft_toLeftOf="@+id/momos" />
+
+        <ImageView
+            android:id="@+id/burger"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/rasgulla"
+            app:srcCompat="@drawable/burger"
+            app:layout_constraintLeft_toLeftOf="@+id/rasgulla"
+            app:layout_constraintRight_toRightOf="@+id/rasgulla" />
+
+        <ImageView
+            android:id="@+id/chow"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/coffee"
+            app:srcCompat="@drawable/chowmein"
+            app:layout_constraintLeft_toLeftOf="@+id/coffee"
+            app:layout_constraintRight_toRightOf="@+id/coffee"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/mancu"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="@+id/burger"
+        app:layout_constraintRight_toRightOf="@+id/burger"
+        app:layout_constraintTop_toBottomOf="@+id/burger"
+        app:srcCompat="@drawable/manchu" />
+
+    <ImageView
+        android:id="@+id/dosa"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="@+id/chow"
+        app:layout_constraintRight_toRightOf="@+id/chow"
+        app:layout_constraintTop_toBottomOf="@+id/chow"
+        app:srcCompat="@drawable/dosa" />
+
+    </android.support.constraint.ConstraintLayout>
