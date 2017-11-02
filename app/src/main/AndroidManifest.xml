@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,14 +18,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ItemsListActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".DosaActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".OrderActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".OrderSummaryActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ItemsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DosaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MomosActivity" />
+        <activity android:name=".BurgerActivity" />
+        <activity android:name=".SpringRollsActivity"></activity>
     </application>
 
 </manifest>

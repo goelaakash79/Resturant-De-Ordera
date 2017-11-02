@@ -1,155 +1,312 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    <android.support.constraint.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.aakash.restura_de_ordera.ItemsListActivity">
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/back"
-            android:alpha="0.7" />
+            android:layout_marginTop="24dp"
+            android:fontFamily="casual"
+            android:text="Pick Your Food"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:background="@drawable/shape1"
+            android:padding="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/momos"
-            android:layout_width="170dp"
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="40dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintLeft_toLeftOf="@+id/guideline"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/momos"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="24dp"
-            app:layout_constraintHorizontal_bias="0.0" />
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
 
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5"
-            tools:layout_editor_absoluteY="0dp"
-            tools:layout_editor_absoluteX="192dp" />
+            <RelativeLayout
+                android:background="#FBE9E7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
 
-        <ImageView
-            android:id="@+id/rolls"
-            android:layout_width="170dp"
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/burger"/>
+
+                <TextView
+                    android:id="@+id/textBurger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/burger"
+                    android:fontFamily="casual"
+                    android:text="Burger"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rateBurger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textBurger"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/burger"
+                    android:fontFamily="sans-serif"
+                    android:text="Price/item: $10"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/orderBurger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/rateBurger"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/burger"
+                    android:background="@drawable/shape2"
+                    android:fontFamily="casual"
+                    android:text="Order Now"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="40dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/springrolls"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="1.0" />
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:background="#FFFDE7"
-        android:fontFamily="cursive"
-        android:text="Item list"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+            <RelativeLayout
+                android:background="#E8F5E9"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
 
-        <ImageView
-            android:id="@+id/rasgulla"
-            android:layout_width="170dp"
+                <ImageView
+                    android:id="@+id/chow"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chowmein"/>
+
+                <TextView
+                    android:id="@+id/textChow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/chow"
+                    android:fontFamily="casual"
+                    android:text="Chowemein"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rateChow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textChow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/chow"
+                    android:fontFamily="sans-serif"
+                    android:text="Price/item: $10"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/orderChow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/rateChow"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/chow"
+                    android:background="@drawable/shape2"
+                    android:fontFamily="casual"
+                    android:text="Order Now"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toBottomOf="@+id/rolls"
-            app:srcCompat="@drawable/rasgulla"
-            app:layout_constraintLeft_toLeftOf="@+id/rolls"
-            app:layout_constraintRight_toRightOf="@+id/rolls" />
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
 
-        <ImageView
-            android:id="@+id/coffee"
-            android:layout_width="170dp"
+            <RelativeLayout
+                android:background="#FFF3E0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/dosa"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dosa"/>
+
+                <TextView
+                    android:id="@+id/textDosa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/dosa"
+                    android:fontFamily="casual"
+                    android:text="Dosa"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rateDosa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textDosa"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/dosa"
+                    android:fontFamily="sans-serif"
+                    android:text="Price/item: $10"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/orderDosa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/rateDosa"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/dosa"
+                    android:background="@drawable/shape2"
+                    android:fontFamily="casual"
+                    android:text="Order Now"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toBottomOf="@+id/momos"
-            app:srcCompat="@drawable/coffee"
-            app:layout_constraintRight_toRightOf="@+id/momos"
-            app:layout_constraintLeft_toLeftOf="@+id/momos" />
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
 
-        <ImageView
-            android:id="@+id/burger"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toBottomOf="@+id/rasgulla"
-            app:srcCompat="@drawable/burger"
-            app:layout_constraintLeft_toLeftOf="@+id/rasgulla"
-            app:layout_constraintRight_toRightOf="@+id/rasgulla" />
+            <RelativeLayout
+                android:background="#FFFDE7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
 
-        <ImageView
-            android:id="@+id/chow"
-            android:layout_width="170dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toBottomOf="@+id/coffee"
-            app:srcCompat="@drawable/chowmein"
-            app:layout_constraintLeft_toLeftOf="@+id/coffee"
-            app:layout_constraintRight_toRightOf="@+id/coffee"
-            app:layout_constraintHorizontal_bias="0.0" />
+                <ImageView
+                    android:id="@+id/momos"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/momos"/>
 
-    <ImageView
-        android:id="@+id/mancu"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintLeft_toLeftOf="@+id/burger"
-        app:layout_constraintRight_toRightOf="@+id/burger"
-        app:layout_constraintTop_toBottomOf="@+id/burger"
-        app:srcCompat="@drawable/manchu" />
+                <TextView
+                    android:id="@+id/textMomos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/momos"
+                    android:fontFamily="casual"
+                    android:text="Momos"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/dosa"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintLeft_toLeftOf="@+id/chow"
-        app:layout_constraintRight_toRightOf="@+id/chow"
-        app:layout_constraintTop_toBottomOf="@+id/chow"
-        app:srcCompat="@drawable/dosa" />
+                <TextView
+                    android:id="@+id/rateMomos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textMomos"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/momos"
+                    android:fontFamily="sans-serif"
+                    android:text="Price/item: $10"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
 
-    </android.support.constraint.ConstraintLayout>
+                <Button
+                    android:id="@+id/orderMomos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/rateMomos"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/momos"
+                    android:background="@drawable/shape2"
+                    android:fontFamily="casual"
+                    android:text="Order Now"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
