@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFDE7"
+    android:background="#CE93D8"
     tools:context="com.example.aakash.restura_de_ordera.OrderActivity">
 
     <ImageView
@@ -22,14 +22,14 @@
 
     <EditText
         android:id="@+id/name1"
-        android:textColorHint="#263238"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="72dp"
         android:layout_marginRight="72dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:hint="Orderer Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColorHint="#263238" />
 
     <EditText
         android:id="@+id/phoneNo"
@@ -140,10 +140,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
         android:fontFamily="monospace"
         android:text="Price"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:layout_marginLeft="72dp"
         android:layout_marginRight="72dp" />
 
@@ -155,7 +156,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="96dp"
         android:layout_marginRight="96dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/shape1"
         android:fontFamily="monospace"
         android:text="Place Order"

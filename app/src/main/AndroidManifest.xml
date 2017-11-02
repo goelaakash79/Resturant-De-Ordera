@@ -32,7 +32,13 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MomosActivity" />
         <activity android:name=".BurgerActivity" />
-        <activity android:name=".SpringRollsActivity"></activity>
+        <activity android:name=".SpringRollsActivity" />
+        <activity android:name=".ChilliHoneyPotatoActivity" />
+        <activity android:name=".PastaActivity" />
+        <activity android:name=".ManchurianActivity" />
+        <activity android:name=".FriedRiceActivity" />
+        <activity android:name=".RasgullaActivity" />
+        <activity android:name=".ChowmeinActivity"></activity>
     </application>
 
 </manifest>

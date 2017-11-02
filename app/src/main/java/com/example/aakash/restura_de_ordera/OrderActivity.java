@@ -49,7 +49,7 @@ public class OrderActivity extends AppCompatActivity {
                     quan.setText(Integer.toString(quantity));
                     return;
                 }
-                if(quantity > 20){
+                if(quantity >= 20){
                     Toast.makeText(OrderActivity.this, "Maximum Quantities can be 20 only.", Toast.LENGTH_SHORT).show();
                     return;
                 }
