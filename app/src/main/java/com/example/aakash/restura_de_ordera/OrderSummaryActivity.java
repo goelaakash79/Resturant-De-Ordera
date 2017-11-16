@@ -1,12 +1,11 @@
 package com.example.aakash.restura_de_ordera;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.example.aakash.restura_de_ordera.R.id.add;
 import static com.example.aakash.restura_de_ordera.R.id.name1;
 
 public class OrderSummaryActivity extends AppCompatActivity {

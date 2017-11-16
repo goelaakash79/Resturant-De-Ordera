@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CE93D8"
+    android:background="#FFB74D"
     tools:context="com.example.aakash.restura_de_ordera.OrderActivity">
 
     <ImageView

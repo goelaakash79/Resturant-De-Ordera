@@ -317,7 +317,7 @@
             android:layout_marginRight="32dp">
 
             <RelativeLayout
-                android:background="#FFFDE7"
+                android:background="#FFECB3"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
@@ -387,7 +387,7 @@
             android:layout_marginRight="32dp">
 
             <RelativeLayout
-                android:background="#FFFDE7"
+                android:background="#B3E5FC"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
@@ -457,7 +457,7 @@
             android:layout_marginRight="32dp">
 
             <RelativeLayout
-                android:background="#FFFDE7"
+                android:background="#B2DFDB"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
@@ -597,7 +597,7 @@
             android:layout_marginRight="32dp">
 
             <RelativeLayout
-                android:background="#FFFDE7"
+                android:background="#9FA8DA"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
@@ -667,7 +667,7 @@
             android:layout_marginRight="32dp">
 
             <RelativeLayout
-                android:background="#FFFDE7"
+                android:background="#FFCDD2"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
