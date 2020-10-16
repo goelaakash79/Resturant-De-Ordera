@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
-        android:text="Price/Piece : $10"
+        android:text="Price/Piece : $20"
         android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="25sp"
